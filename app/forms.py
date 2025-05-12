@@ -6,3 +6,10 @@ class LoginForm(FlaskForm):
     password = PasswordField('Password', validators=[validators.Length(min=4, max=35)])
     submit =  SubmitField("Sign in")
     remember_me = BooleanField("Remember Me")
+
+class RecipeForm(FlaskForm):
+    title        = StringField('Title', validators=[DataRequired()])
+    ingredients  = TextAreaField('Ingredients', validators=[DataRequired()])
+    instructions = TextAreaField('Instructions', validators=[DataRequired()])
+    tags         = StringField('Tags (comma-separated)', validators=[Optional()])
+    submit       = SubmitField('Save')
