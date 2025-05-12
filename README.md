@@ -1,4 +1,8 @@
 Instructions:
-- use source venv/bin/activate
+- python3 -m venv venv to create virtual environment
+- use source venv/bin/activate to activate virtual environment
+- use pip3 install -r requirements.txt to install dependencies
 - run python3 run.py
-- Go to different sites by pasting the given link with /recipe or /recipe/new
+- Enter URL given by the running code followed by /<page name> to navigate to different pages.
+   - Examples:
+     - "127.0.01.1:5000/recipe/1"
